@@ -1,0 +1,3 @@
+- [Work journal preference](feedback_work_journal.md) — user wants session tracking in .work-journal/ so Claude can pick up where it left off
+- [No clarifying questions](feedback_autonomy.md) — just execute, don't ask questions unless told to be careful
+- [Anthropic harness design patterns](reference_anthropic_harness_design.md) — GAN-inspired multi-agent harness, sprint contracts, evaluator tuning from Anthropic's engineering blog
