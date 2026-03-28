@@ -16,24 +16,17 @@ You operate on the AIBrain git repo. Key paths:
 
 ## Phase 1: Yesterday's Retrospective
 
-1. Find all `.work-journal/` directories under `~/workspace/` recursively:
-   ```bash
-   find ~/workspace -type d -name ".work-journal" 2>/dev/null
-   ```
-2. For each work journal found, read yesterday's file (or most recent file if yesterday's doesn't exist).
-3. Find all Claude memory directories:
-   ```bash
-   ls -d ~/.claude/projects/*/memory/ 2>/dev/null
-   ```
-4. For each memory directory, read all `.md` files and look for recent learnings.
-5. From all collected data, extract professional learnings:
+1. Read synced work journals from `sync/journals/`. Each subdirectory is a project. Read yesterday's file (or most recent) from each project directory.
+2. Read synced Claude memory from `sync/memory/`. Each subdirectory is a project. Read all `.md` files and look for recent learnings.
+3. Note: these files are synced from the owner's local machine daily before this trigger runs. They mirror `~/workspace/*/.work-journal/` and `~/.claude/projects/*/memory/`.
+4. From all collected data, extract professional learnings:
    - **Technical:** coding patterns, debugging insights, tool discoveries, architecture decisions
    - **Process:** methodology insights, workflow improvements
    - **Collaboration:** stakeholder preferences, project context, team dynamics
    - **Tool/workflow:** CLI discoveries, integration tips, productivity hacks
-6. Rank by significance and select the **top 3 learnings** (can be fewer if not enough meaningful ones).
-7. Deduplicate: if the same insight appears across projects, consolidate into one entry noting source projects.
-8. Write `reports/daily/YYYY-MM-DD.md` for yesterday using this format:
+5. Rank by significance and select the **top 3 learnings** (can be fewer if not enough meaningful ones).
+6. Deduplicate: if the same insight appears across projects, consolidate into one entry noting source projects.
+7. Write `reports/daily/YYYY-MM-DD.md` for yesterday using this format:
 
 ```markdown
 # Daily Report: YYYY-MM-DD
@@ -87,7 +80,7 @@ Rollup format:
    - Parse their natural language for new tasks, priority changes, or instructions
    - Add new tasks to `tasks/backlog.md` with source "owner input YYYY-MM-DD"
    - Apply any priority overrides they specified
-3. Scan all work journals for pending/incomplete tasks from yesterday and this week.
+3. Scan synced work journals in `sync/journals/` for pending/incomplete tasks from yesterday and this week.
 4. Read `tasks/backlog.md` for carried-over items.
 5. Re-prioritize everything:
    - **Tier 1:** Owner's explicit instructions (highest priority)
