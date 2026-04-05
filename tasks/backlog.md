@@ -1,11 +1,15 @@
 # Task Backlog
 
-## Priority 1 (Do Today)
+## Priority 1 (Do Today — 5hr focus block)
 
-- [ ] **zhengyi-he-onsite: verify and merge 7 remaining agent branches** — Check branch status for BL-002, BL-004, BL-006, BL-017, BL-018, BL-019, BL-020 (dispatched as background agents 2026-03-31). Resolve conflicts, reach 20/20 backlog items merged, final TypeScript check, clean worktrees.
+- [x] **Interview design: coding interview for hiring** — Completed 2026-04-05. Output: `docs/interview-design/coding-interview-rubric.md` — two-stage format (take-home + live), full scoring rubric, problem bank, calibration notes.
+- [x] **Car-parts platform design** — Completed 2026-04-05. Spec already existed at `interview/learning/docs/superpowers/specs/2026-04-04-platform-design.md`. Output: `docs/car-parts/implementation-phases.md` — gap analysis, 5-phase plan, critical path, open decisions.
+- [x] **RAG system implementation deep dive** — Completed 2026-04-05. Output: `docs/learning/rag-deep-dive.md` — architecture overview, chunking strategies, retrieval methods, advanced patterns, evaluation framework, PartFinder application map.
+- [-] **Set up Apple Developer account** — BLOCKED. Requires manual browser enrollment at developer.apple.com. See blocked.md.
 
 ## Priority 2 (This Week)
 
+- [ ] **zhengyi-he-onsite: verify and merge 7 remaining agent branches** — Check branch status for BL-002, BL-004, BL-006, BL-017, BL-018, BL-019, BL-020 (dispatched as background agents 2026-03-31). BLOCKED — see blocked.md.
 - [ ] **Configure Cowork with useful skills and connectors** — Explore available plugins, MCP connectors (Slack, Linear, GitHub, etc.), and skills to set up a productive working environment.
 - [ ] **Understand the difference between Skills, Connectors, and MCP** — Learn how these three concepts relate in the Claude ecosystem. See reference notes below.
 
