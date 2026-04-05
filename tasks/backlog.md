@@ -2,6 +2,8 @@
 
 ## Priority 1 (Do Today)
 
+- [ ] **zhengyi-he-onsite: verify and merge 7 remaining agent branches** — Check branch status for BL-002, BL-004, BL-006, BL-017, BL-018, BL-019, BL-020 (dispatched as background agents 2026-03-31). Resolve conflicts, reach 20/20 backlog items merged, final TypeScript check, clean worktrees.
+
 ## Priority 2 (This Week)
 
 - [ ] **Configure Cowork with useful skills and connectors** — Explore available plugins, MCP connectors (Slack, Linear, GitHub, etc.), and skills to set up a productive working environment.
