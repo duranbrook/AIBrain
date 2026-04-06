@@ -7,9 +7,10 @@
 
 ## Priority 2 (This Week)
 
+- [ ] **buildco: E2E smoke test** — Set `ANTHROPIC_API_KEY` + `DATABASE_URL`, run `prisma migrate dev --name init`, test sign-up → onboard → dashboard → employee chat, run mobile via `cd buildco-mobile && npm start`. Source: business journal 2026-04-06.
+- [ ] **buildco Phase 2** — Task management API (create/assign from CEO Agent chat), daily briefing push notifications (mobile), brand kit generation via image API. Prerequisite: E2E smoke test passes. Source: business journal 2026-04-06.
 - [ ] **Configure Cowork with useful skills and connectors** — Explore available plugins, MCP connectors (Slack, Linear, GitHub, etc.), and skills to set up a productive working environment.
 - [ ] **Understand the difference between Skills, Connectors, and MCP** — Learn how these three concepts relate in the Claude ecosystem. See reference notes below.
-- [ ] **buildco Phase 2** — Task management API, daily briefing push notifications (mobile), brand kit generation. Continue if Joe resumes this project.
 
 ## Priority 3 (Later)
 
