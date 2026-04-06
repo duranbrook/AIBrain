@@ -2,14 +2,14 @@
 
 ## Priority 1 (Do Today — 5hr focus block)
 
-- [x] **Interview design: coding interview for hiring** — Completed 2026-04-05. Output: `docs/interview-design/coding-interview-rubric.md` — two-stage format (take-home + live), full scoring rubric, problem bank, calibration notes.
+- [ ] **Interview rubric: refine promo platform question** — High-level design revisited 2026-04-05; needs fine-tuning on the promotional platform problem specifically. Base rubric is at `docs/interview-design/coding-interview-rubric.md`.
 - [x] **Car-parts platform design** — Completed 2026-04-05. Spec already existed at `interview/learning/docs/superpowers/specs/2026-04-04-platform-design.md`. Output: `docs/car-parts/implementation-phases.md` — gap analysis, 5-phase plan, critical path, open decisions.
-- [x] **RAG system implementation deep dive** — Completed 2026-04-05. Output: `docs/learning/rag-deep-dive.md` — architecture overview, chunking strategies, retrieval methods, advanced patterns, evaluation framework, PartFinder application map.
-- [-] **Set up Apple Developer account** — BLOCKED. Requires manual browser enrollment at developer.apple.com. See blocked.md.
+- [ ] **RAG deep dive: PartFinder implementation** — Architecture reference completed 2026-04-05 (`docs/learning/rag-deep-dive.md`), but PartFinder-specific RAG implementation (applying the patterns to the car-parts codebase) was not completed. Carry over.
+- [x] **Set up Apple Developer account** — Resolved 2026-04-05. No longer blocked.
 
 ## Priority 2 (This Week)
 
-- [ ] **zhengyi-he-onsite: verify and merge 7 remaining agent branches** — Check branch status for BL-002, BL-004, BL-006, BL-017, BL-018, BL-019, BL-020 (dispatched as background agents 2026-03-31). BLOCKED — see blocked.md.
+- [x] **zhengyi-he-onsite: verify and merge 7 remaining agent branches** — Closed out 2026-04-05. (BL-002, BL-004, BL-006, BL-017, BL-018, BL-019, BL-020)
 - [ ] **Configure Cowork with useful skills and connectors** — Explore available plugins, MCP connectors (Slack, Linear, GitHub, etc.), and skills to set up a productive working environment.
 - [ ] **Understand the difference between Skills, Connectors, and MCP** — Learn how these three concepts relate in the Claude ecosystem. See reference notes below.
 
@@ -17,6 +17,9 @@
 
 ## Completed (Recent)
 
+- [x] **Car-parts platform design** — gap analysis, 5-phase implementation roadmap, completed 2026-04-05
+- [x] **Set up Apple Developer account** — resolved 2026-04-05
+- [x] **zhengyi-he-onsite: 7 remaining agent branches** — closed out 2026-04-05
 - [x] **Design and initialize AIBrain repo** — completed 2026-03-28
 - [x] **mockFinch: Claude Files API integration** — all 3 endpoints validated with live Anthropic API, completed 2026-03-30
 - [x] **mockFinch: Transcript intake service** — S3 + Anthropic Files upload + Claude extraction, completed 2026-03-30
