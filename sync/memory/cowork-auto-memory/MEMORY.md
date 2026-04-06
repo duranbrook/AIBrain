@@ -1,0 +1,2 @@
+- [Check repo structure before creating files](feedback_check_repo_structure.md) — Always explore existing folders before placing new files; don't create standalone files at arbitrary paths
+- [AIBrain philosophy](project_aibrain_philosophy.md) — Simulates human learning: What/Why/How → Who/When/Where, cycling through Plan-Prioritize-Execute-Retrospective, persisting learnings into memory
