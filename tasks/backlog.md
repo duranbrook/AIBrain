@@ -2,8 +2,7 @@
 
 ## Priority 1 (Do Today — 5hr focus block)
 
-- [ ] **Interview rubric: refine promo platform question** — Base rubric done 2026-04-05; needs fine-tuning on the promotional platform problem specifically. Rubric at `docs/interview-design/coding-interview-rubric.md`. Carry over from 2026-04-05.
-- [ ] **RAG deep dive: PartFinder implementation** — Architecture reference completed 2026-04-05 (`docs/learning/rag-deep-dive.md`), but PartFinder-specific RAG implementation not completed. Carry over from 2026-04-05.
+- [ ] **RAG deep dive: PartFinder implementation** — Architecture reference completed 2026-04-05 (`docs/learning/rag-deep-dive.md`), but PartFinder-specific RAG implementation not completed. Carry over from 2026-04-05, 2026-04-06, and 2026-04-07.
 
 ## Priority 2 (This Week)
 
@@ -16,6 +15,7 @@
 
 ## Completed (Recent)
 
+- [x] **Interview rubric: Option B promotional platform question** — Full promo platform take-home problem added (POST /promotions, redeem, GET status, background job), with concurrency-specific rubric additions (concurrent redemption handling, validation ordering, error specificity, idempotency). Completed 2026-04-06/07.
 - [x] **buildco: full-stack AI business platform** — scaffold, auth, admin, Expo mobile app, 17 API routes, live Claude API, completed 2026-04-06
 - [x] **Car-parts platform design** — gap analysis, 5-phase implementation roadmap, completed 2026-04-05
 - [x] **Set up Apple Developer account** — resolved 2026-04-05
