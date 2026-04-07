@@ -2,7 +2,7 @@
 
 ## Priority 1 (Do Today — 5hr focus block)
 
-- [ ] **RAG deep dive: PartFinder implementation** — Architecture reference completed 2026-04-05 (`docs/learning/rag-deep-dive.md`), but PartFinder-specific RAG implementation not completed. Carry over from 2026-04-05, 2026-04-06, and 2026-04-07.
+- [x] **RAG deep dive: PartFinder implementation** — Architecture reference completed 2026-04-05 (`docs/learning/rag-deep-dive.md`). PartFinder-specific RAG implementation spec completed 2026-04-07 (`docs/car-parts/rag-implementation.md`). Covers all 4 use cases: parts search, seller support bot, buyer price research, dispute resolution. Full Prisma schema, ingestion pipelines, API routes, and migration plan included.
 
 ## Priority 2 (This Week)
 
