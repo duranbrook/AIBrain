@@ -1,0 +1,3 @@
+- [Owner profile](user_profile.md) — Joe's goals: consistent learner, PPRE cycle, phone-first interaction
+- [Trigger constraint](project_trigger_constraint.md) — 1 trigger limit on current plan, marketplace trigger using the slot
+- [Communication preference](feedback_communication_preference.md) — Prefers Claude app/triggers over Gmail for daily notifications
