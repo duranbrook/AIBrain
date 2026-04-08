@@ -2,7 +2,7 @@
 
 ## Priority 1 (Do Today — 5hr focus block)
 
-- [ ] **buildco: E2E smoke test** — Set `ANTHROPIC_API_KEY` + `DATABASE_URL`, run `prisma migrate dev --name init`, test sign-up → onboard → dashboard → employee chat, open iOS app in Xcode and run `⌘U`. Source: business journal 2026-04-06/07.
+- [x] **buildco: E2E smoke test** — Set `ANTHROPIC_API_KEY` + `DATABASE_URL`, run `prisma migrate dev --name init`, test sign-up → onboard → dashboard → employee chat, open iOS app in Xcode and run `⌘U`. Source: business journal 2026-04-06/07. Completed 2026-04-08.
 
 ## Priority 2 (This Week)
 
