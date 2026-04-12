@@ -2,7 +2,7 @@
 
 ## Priority 1 (Do Today — 5hr focus block)
 
-- [x] **buildco: E2E smoke test** — Set `ANTHROPIC_API_KEY` + `DATABASE_URL`, run `prisma migrate dev --name init`, test sign-up → onboard → dashboard → employee chat, open iOS app in Xcode and run `⌘U`. Source: business journal 2026-04-06/07. Completed 2026-04-08.
+- [ ] **car-parts: Contact enrichment** — Enrich phone/email/website for 3,623 recyclers in `apps/web/src/data/recyclers.ts`. Strategy: major chains first (LKQ Keystone, Fenix, B&R Auto Wrecking), then batch by state with parallel web search agents. Source: car-parts journal 2026-04-11.
 
 ## Priority 2 (This Week)
 
@@ -14,6 +14,7 @@
 
 ## Completed (Recent)
 
+- [x] **car-parts: Recycler directory page** — 3,623 recyclers loaded into `apps/web/src/data/recyclers.ts`, `/recyclers` page live, nav link added. Completed 2026-04-11.
 - [x] **Interview rubric: Option B promotional platform question** — Full promo platform take-home problem added (POST /promotions, redeem, GET status, background job), with concurrency-specific rubric additions (concurrent redemption handling, validation ordering, error specificity, idempotency). Completed 2026-04-06/07.
 - [x] **buildco: full-stack AI business platform** — scaffold, auth, admin, 18 API routes, live Claude API, iOS SwiftUI app with full test suite, completed 2026-04-06/07.
 - [x] **RAG deep dive: PartFinder implementation** — Architecture reference + full 4-use-case spec (hybrid retrieval, model tiering, pgvector HNSW), completed 2026-04-07.
