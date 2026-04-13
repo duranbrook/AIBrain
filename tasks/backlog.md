@@ -14,6 +14,8 @@
 
 ## Completed (Recent)
 
+- [x] **PitCrew: YouTube outreach expanded to 2,000 channels** — 76 BFS rounds, Cat 1–3 prioritized (Parts Resellers, Salvage/Part-Out, Car Flippers). Committed `a55fb12`. Completed 2026-04-12.
+- [x] **PitCrew: Vercel build fix** — Clerk v7 prop rename + Next.js 16 `proxy.ts`. Committed `8ae0113`. Completed 2026-04-12.
 - [x] **car-parts: Recycler directory page** — 3,623 recyclers loaded into `apps/web/src/data/recyclers.ts`, `/recyclers` page live, nav link added. Completed 2026-04-11.
 - [x] **Interview rubric: Option B promotional platform question** — Full promo platform take-home problem added (POST /promotions, redeem, GET status, background job), with concurrency-specific rubric additions (concurrent redemption handling, validation ordering, error specificity, idempotency). Completed 2026-04-06/07.
 - [x] **buildco: full-stack AI business platform** — scaffold, auth, admin, 18 API routes, live Claude API, iOS SwiftUI app with full test suite, completed 2026-04-06/07.
