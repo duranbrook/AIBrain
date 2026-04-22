@@ -3,6 +3,12 @@
 | Task | Blocked Since | Reason | Needed to Unblock |
 |------|--------------|--------|-------------------|
 
-*No active blockers as of 2026-04-21 evening.*
+*No hard blockers (external dependencies) as of 2026-04-22 morning.*
 
-Note: car-parts contact enrichment has been on Priority 1 for 10 days without progress — flagged informally in the 2026-04-21 evening retro, but not filed here as a hard blocker since there is no external dependency. If there is still no movement after the 2026-04-22 morning plan, consider filing it here with a "stalled — needs re-scoping" reason.
+## Stalled (Soft) — Not Technically Blocked
+
+| Task | Stalled Since | Reason | Recommendation |
+|------|--------------|--------|----------------|
+| **car-parts: Contact enrichment** | 2026-04-11 (day 11) | No external block; task has been P1 for 11 days without progress. New active project (`stlab`) has displaced attention. | Demote to P2 unless owner reasserts priority. Or: re-scope to "top 10 chains" as a validation chunk, commit that, then re-assess. |
+
+*If the owner signals that car-parts is still important but paused intentionally, move it to blocked (with reason "owner-deferred") to stop the carry-over counter. Otherwise, the morning plan will formally demote it tomorrow.*
