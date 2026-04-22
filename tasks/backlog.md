@@ -2,7 +2,9 @@
 
 ## Priority 1 (Do Today — 5hr focus block)
 
-- [ ] **car-parts: Contact enrichment** — Enrich phone/email/website for 3,623 recyclers in `apps/web/src/data/recyclers.ts`. Strategy: major chains first (LKQ Keystone, Fenix, B&R Auto Wrecking), then batch by state with parallel web search agents. Source: car-parts journal 2026-04-11. **Carry-over day 10.** Suggest scoping a smaller first chunk (top 10 chains) to validate the batch-agent strategy end-to-end before committing to 3,623 rows.
+- [ ] **stlab: CMDB ingestion + data model** — Active project as of 2026-04-21. In progress: ingestion pipeline (CSV/JSON/YAML), user_groups + user_app_llm migrations, relationship gap reporting, groups tab design. Running /nuke-test-data to reset state as of 2026-04-22 morning. **Currently active.**
+
+- [ ] **car-parts: Contact enrichment** — Enrich phone/email/website for 3,623 recyclers in `apps/web/src/data/recyclers.ts`. Strategy: major chains first (LKQ Keystone, Fenix, B&R Auto Wrecking), then batch by state with parallel web search agents. Source: car-parts journal 2026-04-11. **Carry-over day 11.** Consider demoting to P2 given stlab momentum.
 
 ## Priority 2 (This Week)
 
@@ -12,7 +14,7 @@
 
 ## Priority 3 (Later)
 
-- [ ] **Confirm sync pipeline health** — No journal syncs since 2026-04-12 (now 9 days). On next owner-present session, verify whether journals exist locally for 04-13 → 04-21 but weren't synced, or whether the quiet period reflects actual inactivity. Source: gap flagged across 2026-04-20 and 2026-04-21 daily reports.
+- [ ] **Confirm sync pipeline health** — Quiet period confirmed as real inactivity (2026-04-12 → 2026-04-21). stlab journals now syncing correctly as of 2026-04-22. Monitor for continued sync health.
 
 ## Completed (Recent)
 
