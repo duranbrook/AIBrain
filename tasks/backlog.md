@@ -2,12 +2,11 @@
 
 ## Priority 1 (Do Today — 5hr focus block)
 
-- [ ] **stlab: CMDB ingestion + data model** — Active project as of 2026-04-21. In progress: ingestion pipeline (CSV/JSON/YAML), user_groups + user_app_llm migrations, relationship gap reporting, groups tab design. Running /nuke-test-data to reset state as of 2026-04-22 morning. **Currently active.**
-
-- [ ] **car-parts: Contact enrichment** — Enrich phone/email/website for 3,623 recyclers in `apps/web/src/data/recyclers.ts`. Strategy: major chains first (LKQ Keystone, Fenix, B&R Auto Wrecking), then batch by state with parallel web search agents. Source: car-parts journal 2026-04-11. **Carry-over day 11.** Consider demoting to P2 given stlab momentum.
+- [x] **stlab: CMDB ingestion + data model** — Committed pipeline fixes (code fence stripping, NullPool/Celery, recursive parser, upsert deduplication), 3 migrations (0003/0004/0006), docs/plans, test suite repairs (80/80 passing). Completed 2026-04-22.
 
 ## Priority 2 (This Week)
 
+- [ ] **car-parts: Contact enrichment** — Enrich phone/email/website for 3,623 recyclers in `apps/web/src/data/recyclers.ts`. Demoted from P1 after 11 carry-over days with no progress. Re-scope to top 10 chains as validation chunk. Source: car-parts journal 2026-04-11.
 - [ ] **buildco Phase 2** — Task management API (create/assign from CEO Agent chat), daily briefing push notifications (iOS), brand kit generation via image API. Prerequisite: E2E smoke test passes. Source: business journal 2026-04-06/07.
 - [ ] **Configure Cowork with useful skills and connectors** — Explore available plugins, MCP connectors (Slack, Linear, GitHub, etc.), and skills to set up a productive working environment.
 - [ ] **Understand the difference between Skills, Connectors, and MCP** — Learn how these three concepts relate in the Claude ecosystem. See reference notes below.
