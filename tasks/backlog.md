@@ -2,7 +2,7 @@
 
 ## Priority 1 (Do Today — 5hr focus block)
 
-- [ ] **car-parts: Contact enrichment** — Enrich phone/email/website for 3,623 recyclers in `apps/web/src/data/recyclers.ts`. Strategy: major chains first (LKQ Keystone, Fenix, B&R Auto Wrecking), then batch by state with parallel web search agents. Source: car-parts journal 2026-04-11.
+- [ ] **car-parts: Contact enrichment** — Enrich phone/email/website for 3,623 recyclers in `apps/web/src/data/recyclers.ts`. Strategy: major chains first (LKQ Keystone, Fenix, B&R Auto Wrecking), then batch by state with parallel web search agents. Source: car-parts journal 2026-04-11. **Carry-over day 10.** Suggest scoping a smaller first chunk (top 10 chains) to validate the batch-agent strategy end-to-end before committing to 3,623 rows.
 
 ## Priority 2 (This Week)
 
@@ -11,6 +11,8 @@
 - [ ] **Understand the difference between Skills, Connectors, and MCP** — Learn how these three concepts relate in the Claude ecosystem. See reference notes below.
 
 ## Priority 3 (Later)
+
+- [ ] **Confirm sync pipeline health** — No journal syncs since 2026-04-12 (now 9 days). On next owner-present session, verify whether journals exist locally for 04-13 → 04-21 but weren't synced, or whether the quiet period reflects actual inactivity. Source: gap flagged across 2026-04-20 and 2026-04-21 daily reports.
 
 ## Completed (Recent)
 
