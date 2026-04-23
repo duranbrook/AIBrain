@@ -1,22 +1,23 @@
 # Task Backlog
 
-## Priority 1 (Do Today — 5hr focus block)
+## Priority 1 (Do Tomorrow — 5hr focus block)
 
-- [x] **stlab: CMDB ingestion + data model** — Committed pipeline fixes (code fence stripping, NullPool/Celery, recursive parser, upsert deduplication), 3 migrations (0003/0004/0006), docs/plans, test suite repairs (80/80 passing). Completed 2026-04-22.
+- [ ] **stlab: CMDB ingestion validation on freshly nuked data** — Re-run ingestion against the clean DB/Redis/MinIO state produced by today's `/nuke-test-data`. Confirm 80/80 unit test pass rate holds against re-ingested fixtures. Continue relationship gap reporting + groups tab. Source: stlab journal 2026-04-22.
 
 ## Priority 2 (This Week)
 
-- [ ] **car-parts: Contact enrichment** — Enrich phone/email/website for 3,623 recyclers in `apps/web/src/data/recyclers.ts`. Demoted from P1 after 11 carry-over days with no progress. Re-scope to top 10 chains as validation chunk. Source: car-parts journal 2026-04-11.
+- [ ] **car-parts: Contact enrichment (top-10 chains validation chunk)** — Enrich phone/email/website for the 10 largest chains in `apps/web/src/data/recyclers.ts` as a validation subset before scaling to the full 3,623. Demoted from P1 on 2026-04-22 after 11 zero-progress carry-over days. Source: car-parts journal 2026-04-11.
 - [ ] **buildco Phase 2** — Task management API (create/assign from CEO Agent chat), daily briefing push notifications (iOS), brand kit generation via image API. Prerequisite: E2E smoke test passes. Source: business journal 2026-04-06/07.
 - [ ] **Configure Cowork with useful skills and connectors** — Explore available plugins, MCP connectors (Slack, Linear, GitHub, etc.), and skills to set up a productive working environment.
 - [ ] **Understand the difference between Skills, Connectors, and MCP** — Learn how these three concepts relate in the Claude ecosystem. See reference notes below.
 
 ## Priority 3 (Later)
 
-- [ ] **Confirm sync pipeline health** — Quiet period confirmed as real inactivity (2026-04-12 → 2026-04-21). stlab journals now syncing correctly as of 2026-04-22. Monitor for continued sync health.
+- [ ] **Confirm sync pipeline health** — stlab journals syncing correctly as of 2026-04-22; morning-of-day-after sync window confirmed adequate. Monitor for continued sync health.
 
 ## Completed (Recent)
 
+- [x] **stlab: CMDB ingestion + data model (phase 1)** — Pipeline fixes (code fence stripping, NullPool/Celery, recursive parser, `on_conflict_do_nothing` upsert dedup, model alias), 3 migrations (0003/0004/0006), docs/plans, test suite repairs (80/80 passing). Committed 4 commits to stlab/main via AIBrain execute `11a09cb`. Completed 2026-04-22.
 - [x] **PitCrew: YouTube outreach expanded to 2,000 channels** — 76 BFS rounds, Cat 1–3 prioritized (Parts Resellers, Salvage/Part-Out, Car Flippers). Committed `a55fb12`. Completed 2026-04-12.
 - [x] **PitCrew: Vercel build fix** — Clerk v7 prop rename + Next.js 16 `proxy.ts`. Committed `8ae0113`. Completed 2026-04-12.
 - [x] **car-parts: Recycler directory page** — 3,623 recyclers loaded into `apps/web/src/data/recyclers.ts`, `/recyclers` page live, nav link added. Completed 2026-04-11.
