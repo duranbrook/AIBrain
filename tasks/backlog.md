@@ -2,8 +2,8 @@
 
 ## Priority 1 (Do Today — 5hr focus block; two concurrent threads)
 
-- [ ] **stlab: CMDB ingestion validation on freshly nuked data** — Re-run ingestion against the clean DB/Redis/MinIO state produced by yesterday's `/nuke-test-data`. Confirm 80/80 unit test pass rate holds against re-ingested fixtures. Continue relationship gap reporting + groups tab (design at `docs/plans/2026-04-20-groups-tab-design.md`). Source: stlab journal 2026-04-22.
-- [ ] **pitagents: manual browser smoke test of Sub-project 1, then plan Sub-project 2 (Quote Agent)** — Sub-project 1 code-complete on `feat/web-chat-ui` (27 commits, 76/76 backend tests passing) but never manually exercised in a browser. Step 1: open `http://localhost:3000`, log in (`owner@shop.com` / `testpass`), chat with Assistant (VIN tools) and Tom (shop-DB tools), confirm SSE streaming, voice input, image attach. Step 2: write implementation plan for Sub-project 2 (Quote Agent). Source: pitagents journal 2026-04-23.
+- [x] **stlab: CMDB ingestion validation on freshly nuked data** — 80/80 unit tests pass (fixed Dockerfile to install dev deps); ingestion pipeline validated: 9 users, 3 devices, 6 apps; 3 device-user assignments confirmed. Completed 2026-04-23.
+- [x] **pitagents: smoke test of Sub-project 1 + plan Sub-project 2 (Quote Agent)** — API smoke test passed (found+fixed 3 bugs: UUID auth IDs, model_dump extra fields, SSE save placement). Sub-project 2 plan written at `docs/superpowers/plans/2026-04-23-quote-agent.md` (10 tasks, 4–6h). Completed 2026-04-23.
 
 ## Priority 2 (This Week)
 
