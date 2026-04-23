@@ -3,6 +3,7 @@
 ## Priority 1 (Do Tomorrow — 5hr focus block)
 
 - [ ] **stlab: CMDB ingestion validation on freshly nuked data** — Re-run ingestion against the clean DB/Redis/MinIO state produced by today's `/nuke-test-data`. Confirm 80/80 unit test pass rate holds against re-ingested fixtures. Continue relationship gap reporting + groups tab. Source: stlab journal 2026-04-22.
+- [ ] **pitagents: Sub-project 2 — Quote Agent** — Write implementation plan then execute. Prerequisite: Sub-project 1 (Web Chat UI) complete on `feat/web-chat-ui` branch (27 commits, all 15 tasks done, 76/76 backend tests passing). Source: pitagents journal 2026-04-23.
 
 ## Priority 2 (This Week)
 
@@ -17,6 +18,7 @@
 
 ## Completed (Recent)
 
+- [x] **pitagents: Sub-project 1 — Web Chat UI** — All 15 tasks implemented: DB model, transcribe endpoint, upload endpoint, agent tools (VIN + shop DB), base/assistant/tom agents, chat API (SSE streaming), frontend API client, MessageBubble, VoiceButton, ImageAttach, ChatPanel, AppShell + AgentList, /chat route. 76/76 backend tests passing. Branch: `feat/web-chat-ui`. Completed 2026-04-23. Source: pitagents journal 2026-04-23.
 - [x] **stlab: CMDB ingestion + data model (phase 1)** — Pipeline fixes (code fence stripping, NullPool/Celery, recursive parser, `on_conflict_do_nothing` upsert dedup, model alias), 3 migrations (0003/0004/0006), docs/plans, test suite repairs (80/80 passing). Committed 4 commits to stlab/main via AIBrain execute `11a09cb`. Completed 2026-04-22.
 - [x] **PitCrew: YouTube outreach expanded to 2,000 channels** — 76 BFS rounds, Cat 1–3 prioritized (Parts Resellers, Salvage/Part-Out, Car Flippers). Committed `a55fb12`. Completed 2026-04-12.
 - [x] **PitCrew: Vercel build fix** — Clerk v7 prop rename + Next.js 16 `proxy.ts`. Committed `8ae0113`. Completed 2026-04-12.
