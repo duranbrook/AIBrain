@@ -2,14 +2,14 @@
 
 ## Priority 1 (Do Today — 2026-04-24 Friday; two concurrent threads)
 
-- [ ] **pitagents: Execute Sub-project 2 (Quote Agent)** — Plan is written at `docs/superpowers/plans/2026-04-23-quote-agent.md` (10 tasks, est. 4–6h): Quote DB model, Alembic migration, 6 agent tools, agent class, system prompt, API routes, frontend panel + sidebar entry, tests. Highest-ROI task — plan is fresh and unblocked. Source: pitagents journal 2026-04-23 + Thursday tomorrow-plan.
-- [ ] **stlab: Continue relationship gap reporting + groups tab** — Ingestion pipeline validated yesterday (9 users, 3 devices, 6 apps; 3 device-user assignments; 50 ingest gaps). Next: gap reporting UI and continue groups tab implementation per `docs/plans/2026-04-20-groups-tab-design.md`. Resolve API port 8000 conflict with pitagents so E2E tests can run on the default port. Source: interview_stlab journal 2026-04-23 + Thursday tomorrow-plan.
+- [x] **pitagents: Execute Sub-project 2 (Quote Agent)** — Completed. All 10 tasks shipped: Quote DB model + migration, 6 quote tools, quote agent, system prompt, API routes, QuotePanel + QuoteSummary frontend, tests. Refactored: consolidated into assistant with capability cards (`refactor(assistant)` commit). Deepgram transcribe bug also fixed. Source: pitagents journal 2026-04-23 + commits `dfd6c8e`, `8e77469`. Completed 2026-04-24.
+- [x] **stlab: Continue relationship gap reporting + groups tab** — Both features fully implemented in `ui/pages/2_CI_Browser.py`: Groups tab (tab5) shows all groups with user counts, click to expand member list; Gap reporting in "Action Required" tab (tab4) shows "Unresolved References" table. Port 8000 conflict resolved: stlab moved to host port 8001 (`fix(port)` commit `7bc8293`). 80/80 unit tests pass. Completed 2026-04-24.
 
 ## Priority 2 (This Week)
 
 - [ ] **car-parts: Contact enrichment (top-10 chains validation chunk)** — Enrich phone/email/website for the 10 largest chains in `apps/web/src/data/recyclers.ts` as a validation subset before scaling to the full 3,623. Demoted from P1 on 2026-04-22 after 11 zero-progress carry-over days. Source: car-parts journal 2026-04-11.
 - [ ] **buildco Phase 2** — Task management API (create/assign from CEO Agent chat), daily briefing push notifications (iOS), brand kit generation via image API. Prerequisite: E2E smoke test passes. Source: business journal 2026-04-06/07.
-- [ ] **pitagents: Fix transcribe endpoint 502 (Deepgram)** — Add logging to expose the actual Deepgram error. Blocks voice-input path on chat. Small task, good to batch with Sub-project 2 work. Source: pitagents journal 2026-04-23 (Session 00:00 next steps).
+- [x] **pitagents: Fix transcribe endpoint 502 (Deepgram)** — Fixed: use correct Deepgram SDK method + error logging. Commits `4b7ab90` + `7cfe5c9` + `d4a806f`. Completed 2026-04-24.
 - [ ] **Configure Cowork with useful skills and connectors** — Explore available plugins, MCP connectors (Slack, Linear, GitHub, etc.), and skills to set up a productive working environment.
 - [ ] **Understand the difference between Skills, Connectors, and MCP** — Learn how these three concepts relate in the Claude ecosystem. See reference notes below.
 
