@@ -1,3 +1,4 @@
 - [Owner profile](user_profile.md) — Joe's goals: consistent learner, PPRE cycle, phone-first interaction
 - [Trigger constraint](project_trigger_constraint.md) — 1 trigger limit on current plan, marketplace trigger using the slot
 - [Communication preference](feedback_communication_preference.md) — Prefers Claude app/triggers over Gmail for daily notifications
+- [pitagents SSE bugs](project_pitagents_sse_bugs.md) — 3 chat API bugs found in smoke test: UUID auth IDs, model_dump extra fields, SSE post-yield code never runs
