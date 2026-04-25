@@ -1,26 +1,27 @@
 # Task Backlog
 
-## Priority 1 (Do Today — 2026-04-24 Friday; two concurrent threads)
+## Priority 1 (Do Tomorrow — 2026-04-25 Saturday)
 
-- [x] **pitagents: Execute Sub-project 2 (Quote Agent)** — Completed. All 10 tasks shipped: Quote DB model + migration, 6 quote tools, quote agent, system prompt, API routes, QuotePanel + QuoteSummary frontend, tests. Refactored: consolidated into assistant with capability cards (`refactor(assistant)` commit). Deepgram transcribe bug also fixed. Source: pitagents journal 2026-04-23 + commits `dfd6c8e`, `8e77469`. Completed 2026-04-24.
-- [x] **stlab: Continue relationship gap reporting + groups tab** — Both features fully implemented in `ui/pages/2_CI_Browser.py`: Groups tab (tab5) shows all groups with user counts, click to expand member list; Gap reporting in "Action Required" tab (tab4) shows "Unresolved References" table. Port 8000 conflict resolved: stlab moved to host port 8001 (`fix(port)` commit `7bc8293`). 80/80 unit tests pass. Completed 2026-04-24.
+- [ ] **car-parts: Contact enrichment (top-10 chains validation chunk)** — Enrich phone/email/website for the 10 largest chains in `apps/web/src/data/recyclers.ts` as a validation subset before scaling to the full 3,623. P2 → P1 promotion 2026-04-24 evening after 13 zero-progress carry-over days; recommend a 30-min time-box to force motion. If still no movement by end of weekend, demote to P3 and stop carrying. Source: car-parts journal 2026-04-11.
+- [ ] **pitagents: Sub-project 3 — Mobile Chat Interface (iOS + Android)** — Queued and ready now that Sub-project 2 is fully smoke-tested end-to-end. Mirror the web chat flow on iOS + Android. Source: pitagents journal 2026-04-23.
 
 ## Priority 2 (This Week)
 
-- [ ] **car-parts: Contact enrichment (top-10 chains validation chunk)** — Enrich phone/email/website for the 10 largest chains in `apps/web/src/data/recyclers.ts` as a validation subset before scaling to the full 3,623. Demoted from P1 on 2026-04-22 after 11 zero-progress carry-over days. Source: car-parts journal 2026-04-11.
 - [ ] **buildco Phase 2** — Task management API (create/assign from CEO Agent chat), daily briefing push notifications (iOS), brand kit generation via image API. Prerequisite: E2E smoke test passes. Source: business journal 2026-04-06/07.
-- [x] **pitagents: Fix transcribe endpoint 502 (Deepgram)** — Fixed: use correct Deepgram SDK method + error logging. Commits `4b7ab90` + `7cfe5c9` + `d4a806f`. Completed 2026-04-24.
 - [ ] **Configure Cowork with useful skills and connectors** — Explore available plugins, MCP connectors (Slack, Linear, GitHub, etc.), and skills to set up a productive working environment.
 - [ ] **Understand the difference between Skills, Connectors, and MCP** — Learn how these three concepts relate in the Claude ecosystem. See reference notes below.
 
 ## Priority 3 (Later)
 
-- [ ] **Fix sandbox `.git` lock accumulation** — Cloud runs cannot `unlink` files inside `.git`, so every run leaves `.lock.stale.*` residue (and on Apr 24 morning the initial `git checkout` was blocked by a stale `index.lock` from the 2af7213 sync). Either gate git write-ops behind a lock cleaner, or run sync/retro only from the local cron where unlink is permitted. Source: interview_AIBrain journal 2026-04-23 "Friction notes".
+- [ ] **Fix sandbox `.git` lock accumulation** — Cloud runs cannot `unlink` files inside `.git`, so every run leaves `.lock.stale.*` residue (and on Apr 24 morning the initial `git checkout` was blocked by a stale `index.lock` from the 2af7213 sync). Today's evening retro hit the same issue (`unable to unlink .git/index.lock: Operation not permitted`). Either gate git write-ops behind a lock cleaner, or run sync/retro only from the local cron where unlink is permitted. Source: interview_AIBrain journal 2026-04-23 "Friction notes".
 - [ ] **Confirm sync pipeline health** — Overnight sync on 2026-04-23 correctly caught the pitagents 23:09 session that was missed by the prior evening retro. Monitor for continued sync health.
-- [ ] **pitagents: Sub-project 3 — Mobile Chat Interface** — Queued after Sub-project 2 ships. Mirror the web chat flow on iOS + Android. Source: pitagents journal 2026-04-23.
 
 ## Completed (Recent)
 
+- [x] **pitagents: Quote Agent end-to-end smoke test + 4 runtime fixes** — Joe smoke-tested the Quote Agent in the evening and found 4 runtime bugs that the unit-test suite had missed: argument-order mistake in `create_quote` (`3f143cc`), QuoteSummary using wrong qty field + missing refetch after finalize (`be29322`), agent stream error handler silently swallowing exceptions (`191fbd0`), and `quoteId` not restored from chat history on reload (`c11c535`). Quote Agent now functional end-to-end. Completed 2026-04-24 evening.
+- [x] **pitagents: Execute Sub-project 2 (Quote Agent)** — All 10 tasks shipped: Quote DB model + migration, 6 quote tools, quote agent, system prompt, API routes, QuotePanel + QuoteSummary frontend, tests. Refactored: consolidated into assistant with capability cards (`refactor(assistant)` commit). Deepgram transcribe bug also fixed. Source: pitagents journal 2026-04-23 + commits `dfd6c8e`, `8e77469`. Completed 2026-04-24.
+- [x] **stlab: Continue relationship gap reporting + groups tab + port fix** — Both features were already fully implemented in `ui/pages/2_CI_Browser.py`: Groups tab (tab5) shows all groups with user counts, click to expand member list; Gap reporting in "Action Required" tab (tab4) shows "Unresolved References" table. Port 8000 conflict resolved: stlab moved to host port 8001 (`fix(port)` commit `7bc8293`). 80/80 unit tests pass. Completed 2026-04-24.
+- [x] **pitagents: Fix transcribe endpoint 502 (Deepgram)** — Fixed: use correct Deepgram SDK method + error logging. Commits `4b7ab90` + `7cfe5c9` + `d4a806f`. Completed 2026-04-24.
 - [x] **stlab: CMDB ingestion validation on freshly nuked data** — 80/80 unit tests pass (fixed Dockerfile to install dev deps); ingestion pipeline validated: 9 users, 3 devices, 6 apps; 3 device-user assignments confirmed. Completed 2026-04-23.
 - [x] **pitagents: smoke test of Sub-project 1 + plan Sub-project 2 (Quote Agent)** — API smoke test passed (found+fixed 3 bugs: UUID auth IDs, model_dump extra fields, SSE save placement). Sub-project 2 plan written at `docs/superpowers/plans/2026-04-23-quote-agent.md` (10 tasks, 4–6h). Completed 2026-04-23.
 - [x] **pitagents: Sub-project 1 — Web Chat UI** — All 15 tasks implemented: DB model, transcribe endpoint, upload endpoint, agent tools (VIN + shop DB), base/assistant/tom agents, chat API (SSE streaming), frontend API client, MessageBubble, VoiceButton, ImageAttach, ChatPanel, AppShell + AgentList, /chat route. 76/76 backend tests passing. Branch: `feat/web-chat-ui`. Completed 2026-04-23. Source: pitagents journal 2026-04-23.
