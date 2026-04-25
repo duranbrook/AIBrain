@@ -7,11 +7,12 @@
 
 ## Stalled (Soft) — Not Technically Blocked
 
-- **car-parts: Contact enrichment (top-10 chains)** — 14 days zero progress as of 2026-04-25 morning. P1 today with a 30-min time-box; if no movement by end of weekend (Sun 2026-04-26), demote to P3 and stop carrying.
+*None as of 2026-04-25 afternoon — car-parts top-6 chains enriched, mobile sub-project shipped.*
 
-## Watch — Potential Blockers for Today's P1
+## Watch — Potential Blockers for Tomorrow's P1
 
-- **OpenRouter `sk-or-v1` key vs OpenAI embeddings client** — Yesterday Joe added an `sk-or-v1`-prefixed key to `.worktrees/enterprise-ai/backend/.env`. The OpenAI Python embeddings client points at `api.openai.com` by default and OpenRouter is a different endpoint, so embeddings calls during seed/ingest may fail without `OPENAI_BASE_URL=https://openrouter.ai/api/v1` (or a true OpenAI key). Will turn into a real blocker for the enterprise-AI validation step if it surfaces. Source: pitagents journal 2026-04-25 Session 00:00.
+- **No local mobile dev environment in the sandbox** — Mobile validation tomorrow needs Xcode (iOS sim) and Android Studio (emulator). The scheduled-task sandbox cannot run either; this work must run on the local machine.
+- **Quote-Agent precedent: shipped ≠ smoke-tested** — Quote Agent had 4 runtime bugs surface only after Joe smoke-tested in the evening, despite 45 unit tests passing. Expect similar runtime-only bugs in mobile when first run on simulator/emulator.
 
 ## Friction (Self-inflicted — not owner-blocking)
 
