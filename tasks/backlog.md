@@ -2,9 +2,9 @@
 
 ## Priority 1 (Today — 2026-04-25 Saturday)
 
-- [ ] **pitagents: Validate enterprise AI stack end-to-end + merge to main** — Yesterday's `feat/enterprise-ai-architecture` branch landed 13 SDD tasks (LangGraph 5-node ReAct graph, Qdrant, intent classifier, validator, feedback critic, thumbs UI), 15 commits, 45 tests pass. Not yet validated end-to-end. From `.worktrees/enterprise-ai`: (1) `docker compose up --build`; (2) `alembic upgrade head`; (3) seed few-shots `python -m src.scripts.seed_few_shots --openai-api-key $OPENAI_API_KEY`; (4) **verify embeddings work with the OpenRouter `sk-or-v1` key** — embeddings client defaults to api.openai.com; likely needs `OPENAI_BASE_URL=https://openrouter.ai/api/v1` override or a real OpenAI key; (5) merge `feat/enterprise-ai-architecture` → `main`. Source: pitagents journal 2026-04-24/25 (carried over from yesterday's open loop).
-- [ ] **pitagents: Sub-project 3 — Mobile Chat Interface (iOS + Android)** — Queued and ready once enterprise AI stack is validated and merged. Mirror the web chat flow on iOS + Android. Source: pitagents journal 2026-04-23.
-- [ ] **car-parts: Contact enrichment (top-10 chains validation chunk)** — Enrich phone/email/website for the 10 largest chains in `apps/web/src/data/recyclers.ts` as a validation subset before scaling to the full 3,623. P2 → P1 promotion 2026-04-24 evening after 13 zero-progress carry-over days; **30-min time-box** to force motion. If still no movement by end of weekend, demote to P3 and stop carrying. Source: car-parts journal 2026-04-11.
+- [x] **pitagents: Validate enterprise AI stack end-to-end + merge to main** — Validated 2026-04-25 9am run. Stack running (5 containers healthy). Few-shots seeded (12 examples, used OpenRouter for embeddings since OpenAI key quota exhausted). Chat SSE confirmed end-to-end. 100 tests pass. Merge was already on main (`32ececc`). Completed 2026-04-25.
+- [ ] **pitagents: Sub-project 3 — Mobile Chat Interface (iOS + Android)** — Now unblocked. Mirror the web chat flow on iOS + Android. Source: pitagents journal 2026-04-23.
+- [x] **car-parts: Contact enrichment (top-10 chains validation chunk)** — Enriched 176 entries across 6 chains: LKQ (117, phone+email), Fenix (25, email), Aesop (15, website+phone), iPull-uPull (4, website), B&R (14, phone), Pick-n-Pull (1, phone+email). Committed `093f561`. Next: per-location phone enrichment via API. Completed 2026-04-25.
 
 ## Priority 2 (This Week)
 
