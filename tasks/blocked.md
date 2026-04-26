@@ -2,8 +2,8 @@
 
 | Task | Blocked Since | Reason | Needed to Unblock |
 |------|--------------|--------|-------------------|
-
-*No hard blockers (external dependencies) as of 2026-04-26 morning plan.*
+| pitagents: Mobile validation on simulator/emulator | 2026-04-26 | Sandbox cloud env has no Xcode + Android Studio; cannot run iOS Simulator or Android Emulator. Static code review (delivered today) is the best the sandbox can do; live smoke test must run on Joe's laptop. | Joe runs the simulator + emulator locally against the deployed backend (Railway). Code review at `pitagents/docs/mobile-code-review-2026-04-26.md` lists 3 P0 fixes that should land *before* the smoke test or it will trip on them immediately. |
+| buildco Phase 2 kickoff | 2026-04-26 | Hard prerequisite is "E2E mobile smoke test passes" for pitagents — that prerequisite is itself blocked above. | Mobile smoke test passes on Joe's laptop, or the prerequisite is dropped from buildco Phase 2 scope. |
 
 ## Stalled (Soft) — Not Technically Blocked
 
