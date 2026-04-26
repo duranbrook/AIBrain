@@ -1,18 +1,19 @@
 # Task Backlog
 
-## Priority 1 (Tomorrow — 2026-04-26 Sunday)
+## Priority 1 (Today — 2026-04-26 Sunday)
 
-- [ ] **pitagents: Mobile validation on simulator/emulator** — Run iOS app via Xcode simulator + Android via Android Studio emulator against live backend. Confirm login → customer list → vehicle detail → chat flow. Precedent: Quote Agent had 4 runtime bugs after 45 unit tests passed; expect similar smoke-only bugs.
-- [ ] **pitagents: Mobile code review pass** — Structured review across Android + iOS: auth interceptors, 401 handling, JWT decode safety, Compose state management, SwiftUI memory references.
-- [ ] **buildco Phase 2 kickoff** — Conditional on mobile validation completing clean. Task management API (create/assign from CEO Agent chat), daily briefing push notifications (iOS), brand kit generation via image API. Prerequisite: E2E smoke test passes.
+- [ ] **pitagents: Mobile validation on simulator/emulator** — Run iOS app via Xcode simulator + Android via Android Studio emulator against live backend. Confirm login → customer list → vehicle detail → chat flow. Precedent: Quote Agent had 4 runtime bugs after 45 unit tests passed; expect similar smoke-only bugs. *Requires local laptop env (Xcode + Android Studio) — sandbox can't run.*
+- [ ] **pitagents: Mobile code review pass** — Structured review across Android + iOS: auth interceptors, 401 handling, JWT decode safety, Compose state management, SwiftUI memory references. *Can be partly done in sandbox via static review.*
+- [ ] **pitagents: API contract docs (enum values + endpoint catalog)** — Promoted from P2 because the mobile work just demonstrated this is load-bearing, not polish. Document direction (`"out"/"in"`) + channel (`"wa"/"email"`) + the rest of the endpoint catalog so future clients don't re-discover drift.
+- [ ] **buildco Phase 2 kickoff** — Conditional on mobile validation completing clean. Task management API (create/assign from CEO Agent chat), daily briefing push notifications (iOS), brand kit generation via image API. Prerequisite: E2E mobile smoke test passes.
 
-## Priority 2 (This Week)
+## Priority 2 (Next Week — W18)
 
-- [ ] **pitagents API contract docs** — Document direction (`"out"/"in"`) + channel (`"wa"/"email"`) enum values discovered during mobile work, and the full endpoint catalog. Helps future clients avoid re-discovering enum drift.
 - [ ] **pitagents test infra cleanup** — (1) Create `test_autoshop` DB with credentials matching `postgresql+asyncpg://test:test@localhost/test_autoshop` to fix 14 asyncpg test errors. (2) Remove or update stale `test_full_inspection_flow` E2E mock (`run_inspection_agent` no longer exists in `src/api/sessions.py`).
 - [ ] **car-parts: Per-location phone enrichment** — Investigate Google Places API (or similar) for the ~2,000 recyclers with empty phone fields. Corporate-level phones already added to top-6 chains.
-- [ ] **Configure Cowork with useful skills and connectors** — Explore available plugins, MCP connectors (Slack, Linear, GitHub, etc.), and skills to set up a productive working environment.
-- [ ] **Understand the difference between Skills, Connectors, and MCP** — Learn how these three concepts relate in the Claude ecosystem. See reference notes below.
+- [ ] **stlab: Continue post-CMDB work** — phase 1 (CMDB ingestion + data model + groups + gap reporting) shipped W17. Next phase TBD; check stlab journals for direction when work resumes there.
+- [ ] **Configure Cowork with useful skills and connectors** — Explore available plugins, MCP connectors (Slack, Linear, GitHub, etc.), and skills to set up a productive working environment. *Carried since W14.*
+- [ ] **Understand the difference between Skills, Connectors, and MCP** — Learn how these three concepts relate in the Claude ecosystem. See reference notes below. *Carried since W14.*
 
 ## Priority 3 (Later)
 
