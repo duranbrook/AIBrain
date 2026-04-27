@@ -2,3 +2,5 @@
 - [Trigger constraint](project_trigger_constraint.md) — 1 trigger limit on current plan, marketplace trigger using the slot
 - [Communication preference](feedback_communication_preference.md) — Prefers Claude app/triggers over Gmail for daily notifications
 - [pitagents SSE bugs](project_pitagents_sse_bugs.md) — 3 chat API bugs found in smoke test: UUID auth IDs, model_dump extra fields, SSE post-yield code never runs
+- [OpenRouter embeddings](reference_openrouter_embeddings.md) — OPENAI_BASE_URL trick: use OpenAI Python SDK against OpenRouter when OpenAI quota is exhausted
+- [JWT URL-safe base64](reference_jwt_url_safe_base64.md) — Swift `Data(base64Encoded:)` rejects `-`/`_`; convert before decoding or claims silently turn into empty strings

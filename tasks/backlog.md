@@ -19,8 +19,9 @@
 
 ## Priority 3 (Later)
 
-- [ ] **Fix sandbox `.git` lock accumulation** — Cloud runs cannot `unlink` files inside `.git`, so every run leaves `.lock.stale.*` residue (and on Apr 24 morning the initial `git checkout` was blocked by a stale `index.lock` from the 2af7213 sync). Today's evening retro hit the same issue (`unable to unlink .git/index.lock: Operation not permitted`). Either gate git write-ops behind a lock cleaner, or run sync/retro only from the local cron where unlink is permitted. Source: interview_AIBrain journal 2026-04-23 "Friction notes".
-- [ ] **Confirm sync pipeline health** — Overnight sync on 2026-04-23 correctly caught the pitagents 23:09 session that was missed by the prior evening retro. Monitor for continued sync health.
+- [ ] **openclaw — new project, watch for direction** — `sync/journals/projects_openclaw/2026-04-25.md` shows a single 20:24 Friday session: empty project, user asking how to install OpenClaw. No code yet, no follow-up sessions through Sunday. Filed for awareness; promote when Joe drives it forward. Source: `sync/journals/projects_openclaw/2026-04-25.md`.
+- [ ] **Fix sandbox `.git` lock accumulation** — Cloud runs cannot `unlink` files inside `.git`, so every run leaves `.lock.stale.*` residue (and on Apr 24 morning the initial `git checkout` was blocked by a stale `index.lock` from the 2af7213 sync). 2026-04-26 evening retro hit the same issue (`unable to unlink .git/index.lock: Operation not permitted`). Either gate git write-ops behind a lock cleaner, or run sync/retro only from the local cron where unlink is permitted. Source: interview_AIBrain journal 2026-04-23 "Friction notes".
+- [ ] **Confirm sync pipeline health** — Overnight sync on 2026-04-23 correctly caught the pitagents 23:09 session that was missed by the prior evening retro. *Re-validated 2026-04-27 morning:* the 7:50am sync correctly brought down a large block of pitagents Sunday journal data that last night's evening retro had missed (7 substantial Sunday sessions). The morning-plan re-run mechanism worked — incomplete evening retros are recoverable as long as the morning sync catches up. Continue monitoring.
 
 ## Completed (Recent)
 
