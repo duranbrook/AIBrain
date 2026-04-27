@@ -2,8 +2,9 @@
 
 | Task | Blocked Since | Reason | Needed to Unblock |
 |------|--------------|--------|-------------------|
-| pitagents: Mobile validation on simulator/emulator | 2026-04-26 | Sandbox cloud env has no Xcode + Android Studio; cannot run iOS Simulator or Android Emulator. Static code review (delivered today) is the best the sandbox can do; live smoke test must run on Joe's laptop. | Joe runs the simulator + emulator locally against the deployed backend (Railway). Code review at `pitagents/docs/mobile-code-review-2026-04-26.md` lists 3 P0 fixes that should land *before* the smoke test or it will trip on them immediately. |
-| buildco Phase 2 kickoff | 2026-04-26 | Hard prerequisite is "E2E mobile smoke test passes" for pitagents — that prerequisite is itself blocked above. | Mobile smoke test passes on Joe's laptop, or the prerequisite is dropped from buildco Phase 2 scope. |
+| pitagents: Mobile validation on simulator/emulator | 2026-04-26 | Sandbox cloud env has no Xcode + Android Studio; cannot run iOS Simulator or Android Emulator. Static code review delivered 2026-04-26; 3 P0 fixes shipped 2026-04-27 9am execute (`87a3fb7`, `7b3c120`, `3ce3daf` on `pitagents/main`). | Joe runs the simulator + emulator locally against the deployed backend (Railway). Smoke test should now clear first launch (login → customer list → chat fetch → mid-session 401 path). Capture any new runtime bugs that surface and triage. |
+| pitagents: Monitor real inspection results for per-finding photo matching quality | 2026-04-27 | Sandbox cannot observe production; verifying photo-to-finding matching needs eyes on actual generated PDFs from real inspections. | Joe shares one or two recent inspection PDFs (or the underlying `findings.photo_url` rows) so the matching quality can be inspected. Alternatively, add a backend log line that records counts of "matched vs. unassigned" photos per generated PDF and review the log. |
+| buildco Phase 2 kickoff | 2026-04-26 | Hard prerequisite is "E2E mobile smoke test passes" for pitagents — that prerequisite is itself blocked above. With 3 P0 fixes shipped 2026-04-27, the prerequisite is closer but still pending laptop session. | Mobile smoke test passes on Joe's laptop, or the prerequisite is dropped from buildco Phase 2 scope. |
 
 ## Stalled (Soft) — Not Technically Blocked
 
