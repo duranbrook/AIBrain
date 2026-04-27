@@ -7,12 +7,12 @@
 
 ## Stalled (Soft) — Not Technically Blocked
 
-*None as of 2026-04-26 morning. car-parts top-6 chains shipped on Saturday; per-location enrichment is now a P2 with a clear next step (Google Places API investigation), not a stall.*
+*None as of 2026-04-26 evening. car-parts top-6 chains shipped on Saturday; per-location enrichment is now a P2 with a clear next step (Google Places API investigation), not a stall.*
 
-## Watch — Potential Blockers for Today's P1
+## Watch — Potential Blockers for W18 P1
 
-- **No local mobile dev environment in the sandbox** — Mobile validation needs Xcode (iOS sim) and Android Studio (emulator). The scheduled-task sandbox cannot run either; this work must run on the local laptop. Code review can proceed in the sandbox via static review.
-- **Quote-Agent precedent: shipped ≠ smoke-tested** — Quote Agent had 4 runtime bugs surface only after smoke test, despite 45 unit tests passing. Expect similar runtime-only bugs in mobile when first run on simulator/emulator. Budget for it in today's plan.
+- **No local mobile dev environment in the sandbox** — Mobile validation needs Xcode (iOS sim) and Android Studio (emulator). The scheduled-task sandbox cannot run either; this work must run on the local laptop. Sunday's code review in the sandbox already delivered the static-only quality gate; live smoke now needs Joe's laptop.
+- **Quote-Agent precedent: shipped ≠ smoke-tested** — Quote Agent had 4 runtime bugs surface only after smoke test, despite 45 unit tests passing. Sunday's code review found 3 P0s in mobile that would have crashed at first run; expect *additional* runtime-only bugs surfacing during the W18 simulator/emulator pass on top of those. Budget for it in W18 P1.
 
 ## Friction (Self-inflicted — not owner-blocking)
 
