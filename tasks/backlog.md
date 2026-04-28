@@ -1,10 +1,10 @@
 # Task Backlog
 
-## Priority 1 (Today — 2026-04-27 Monday, W18 starts)
+## Priority 1 (Tomorrow — 2026-04-28 Tuesday, W18)
 
-- [ ] **pitagents: Mobile validation on simulator/emulator** — Run iOS app via Xcode simulator + Android via Android Studio emulator against live backend. Confirm login → customer list → vehicle detail → chat flow. Precedent: Quote Agent had 4 runtime bugs after 45 unit tests passed; expect similar smoke-only bugs. *Requires local laptop env (Xcode + Android Studio) — sandbox can't run; carried from Sunday.*
-- [ ] **pitagents: Monitor real inspection results for per-finding photo matching quality** — New as of this morning. Joe's 05:00 session shipped the photo-to-finding matching fix (chain-of-thought prompt + stable-S3-URL identifiers in `findings.photo_url`). Watch live PDFs over the next few inspections to confirm photos land on the correct finding cards instead of the unassigned gallery. Source: `sync/journals/projects_pitagents/2026-04-27.md`.
-- [ ] **buildco Phase 2 kickoff** — Task management API (create/assign from CEO Agent chat), daily briefing push notifications (iOS), brand kit generation via image API. Prerequisite: E2E mobile smoke test passes — OR de-couple from mobile and start independently if Joe wants to parallelize. *Carried from Sunday.*
+- [ ] **pitagents: Mobile validation on simulator/emulator** — Run iOS app via Xcode simulator + Android via Android Studio emulator against live backend. Confirm login → customer list → vehicle detail → chat flow. With today's 3 P0 fixes (`87a3fb7`, `7b3c120`, `3ce3daf`) shipped on `pitagents/main`, first launch should clear without JWT/createdAt/session-expired bugs. Precedent: Quote Agent had 4 runtime bugs after 45 unit tests passed; expect *additional* smoke-only bugs on top of the 3 already-fixed P0s. *Requires local laptop env (Xcode + Android Studio) — sandbox can't run; carried since Sunday.*
+- [ ] **pitagents: Monitor real inspection results for per-finding photo matching quality** — Joe's 05:00 Monday session shipped the photo-to-finding matching fix (chain-of-thought prompt + stable-S3-URL identifiers in `findings.photo_url`). Watch live PDFs over the next few inspections to confirm photos land on the correct finding cards instead of the unassigned gallery. Source: `sync/journals/projects_pitagents/2026-04-27.md`.
+- [ ] **buildco Phase 2 kickoff** — Task management API (create/assign from CEO Agent chat), daily briefing push notifications (iOS), brand kit generation via image API. Prerequisite: E2E mobile smoke test passes — OR de-couple from mobile and start independently if Joe wants to parallelize. *Carried since Sunday.*
 
 ## Priority 2 (This Week — W18)
 
