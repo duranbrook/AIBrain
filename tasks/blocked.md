@@ -27,6 +27,7 @@
 - **iOS sim deep-flow tap calibration is fragile** — Upper flow worked on 2026-04-30; deep navigation didn't. Pattern matches the 2026-04-26 → 2026-04-27 cliclick regression: pixel-driven taps + per-build coord recalibration is recurring fragility. Strongly suggests committing to `xcrun simctl io input` + accessibility identifiers instead.
 - **Shipped ≠ smoke-tested (4th instance budget)** — 2026-04-30 shipped a substantial voice + reports + estimate stack to `pitagents.vercel.app` with deploy-time fixes (Vercel framework misconfig, lightningcss linux build) discovered only at deploy time. The voice chain bug surfaced after deploy too. Budget for more runtime-only bugs in the multi-step chain user-test and Android E2E.
 - **AIBrain daily-cycle scheduler missing morning runs (3 days)** — No `chore(plan)` commits since 2026-04-28; daily reports for 04-29 / 04-30 / 05-01 weren't written. Sync + execute fired today (00:15 + 00:20) but plan didn't. Filed as a P3 backlog item; if the gap continues, escalates to P2.
+  - **2026-05-02 update — escalated to P2 in `tasks/backlog.md`.** Today: morning-plan fired late at 12:09 UTC; **execute did not fire at all.** That makes 4 consecutive scheduled days with at least one cycle phase missing. Pattern is no longer noise. Next escalation: if 2026-05-03 also misses execute, promote to P1.
 
 ## Friction (Self-inflicted — not owner-blocking)
 
