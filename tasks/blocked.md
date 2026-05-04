@@ -1,5 +1,7 @@
 # Blocked Items
 
+> **2026-05-03 20:00 UTC (Sunday evening-retro):** No items moved between blocked / unblocked today. Nothing new to add. Table below is current as of this morning's plan run + this confirmation.
+
 | Task | Blocked Since | Reason | Needed to Unblock |
 |------|--------------|--------|-------------------|
 | pitagents: Merge `feat/ios-technician-chat` into main (24 commits ahead) | 2026-05-03 | Branch holds the iOS technician chat (15 tasks) + homepage/login/demo (9 tasks). Build succeeds, all 16 backend tests pass, TypeScript compiles cleanly. Hard prerequisite: owner must first complete the Google Cloud Console OAuth client ID setup so the homepage `/login` Google flow has a real audience to verify. Without that, merging would put a half-functional `/login` page into prod. | Owner creates a Google OAuth 2.0 Client ID in Google Cloud Console, sets `GOOGLE_CLIENT_ID` (Railway backend env) + `NEXT_PUBLIC_GOOGLE_CLIENT_ID` (Vercel + `.env.local`), reports back. Then merge, push, Railway auto-deploys (running migrations 0024 + 0026), Vercel auto-deploys (or `vercel --prod --force` from web/). |
